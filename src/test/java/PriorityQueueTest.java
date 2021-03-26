@@ -29,7 +29,7 @@ public class PriorityQueueTest {
     @MethodSource("getParameters")
     public void parameterizedTest(int[] input, int[] expected) {
         PriorityQueue pqInput = new PriorityQueue();
-        
+        for (int e : input) {
             pqInput.offer(e);
         }
         for (int e : expected) {
